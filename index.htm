@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
+        "HTMLFiles/xhtml-math11-f.dtd">
+
+<!-- Created with the Wolfram Language : www.wolfram.com -->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <title>
+  CVHW6
+ </title>
+ <link href="HTMLFiles/CVHW6.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<p class="Title">
+ The 6th Homework
+</p>
+
+
+
+<p class="Text">
+ No.2160508170
+</p>
+
+
+
+<p class="Text">
+ Task:<br />&nbsp;&nbsp;&nbsp;&nbsp;1. LPF for Gaussian noise<br />&nbsp;&nbsp;&nbsp;&nbsp;2.Filter for the salt &amp; pepper noise<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.1 Adaptive mean filter<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.2 Adaptive median filter<br />&nbsp;&nbsp;&nbsp;&nbsp;3.Wiener Filter and constrained MSE filter
+</p>
+
+
+
+<p class="Section">
+ Image Preprocessing
+</p>
+
+
+
+<p class="Subsection">
+ Welcome the Lena.
+</p>
+
+
+
+<p class="Code">
+ <img src="HTMLFiles/CVHW6_1.gif" alt="CVHW6_1.gif" width="427" height="128" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/CVHW6_2.png" alt="CVHW6_2.png" width="227" height="17" style="vertical-align:middle" />
+</p>
+
+<table class='Output'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>Test Image</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span><img src="HTMLFiles/CVHW6_3.gif" alt="CVHW6_3.gif" width="180" height="180" style="vertical-align:middle" /></span></td>
+ </tr>
+</table>
+
+<p class="Subsection">
+ Gaussian Noise
+</p>
+
+
+
+<p class="Code">
+ <img src="HTMLFiles/CVHW6_4.gif" alt="CVHW6_4.gif" width="707" height="106" style="vertical-align:middle" />
+</p>
+
+<table class='Output'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>Image with Gaussian noise</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span><img src="HTMLFiles/CVHW6_5.gif" alt="CVHW6_5.gif" width="180" height="180" style="vertical-align:middle" /></span></td>
+ </tr>
+</table>
+
+<p class="Subsection">
+ Salt &amp; Pepper Noise
+</p>
+
+
+
+<p class="Code">
+ <img src="HTMLFiles/CVHW6_6.gif" alt="CVHW6_6.gif" width="899" height="172" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/CVHW6_7.png" alt="CVHW6_7.png" width="274" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/CVHW6_8.png" alt="CVHW6_8.png" width="290" height="17" style="vertical-align:middle" />
+</p>
+
+<table class='Output'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>Salt &amp; Pepper Noise</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span><img src="HTMLFiles/CVHW6_9.gif" alt="CVHW6_9.gif" width="180" height="180" style="vertical-align:middle" /></span></td>
+ </tr>
+</table>
+
+<p class="Code">
+ <img src="HTMLFiles/CVHW6_10.gif" alt="CVHW6_10.gif" width="962" height="128" style="vertical-align:middle" />
+</p>
+
+<table class='Output'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span></span></td>
+  <td style='text-align: center;'><span></span></td>
+  <td style='text-align: center;'><span></span></td>
+  <td style='text-align: center;'><span></span></td>
+  <td style='text-align: center;'><span></span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>Gaussian</span></td>
+  <td style='text-align: center;'><span>Butterworth</span></td>
+  <td style='text-align: center;'><span>Median</span></td>
+  <td style='text-align: center;'><span>Max</span></td>
+  <td style='text-align: center;'><span>Min</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span><img src="HTMLFiles/CVHW6_11.gif" alt="CVHW6_11.gif" width="180" height="180" style="vertical-align:middle" /></span></td>
+  <td style='text-align: center;'><span><img src="HTMLFiles/CVHW6_12.gif" alt="CVHW6_12.gif" width="180" height="180" style="vertical-align:middle" /></span></td>
+  <td style='text-align: center;'><span><img src="HTMLFiles/CVHW6_13.gif" alt="CVHW6_13.gif" width="180" height="180" style="vertical-align:middle" /></span></td>
+  <td style='text-align: center;'><span><img src="HTMLFiles/CVHW6_14.gif" alt="CVHW6_14.gif" width="180" height="180" style="vertical-align:middle" /></span></td>
+  <td style='text-align: center;'><span><img src="HTMLFiles/CVHW6_15.gif" alt="CVHW6_15.gif" width="180" height="180" style="vertical-align:middle" /></span></td>
+ </tr>
+</table>
+
+<p class="Text">
+ Generally, the linear filter performs better than the order filters. More DC attenuation involved by the Butterworth filter.
+</p>
+
+
+
+<p class="Subsection">
+ Adaptive Mean Filter
+</p>
+
+
+
+<p class="Text">
+ Obviously it&rsquo;s not a wise choice to apply adaptive mean filter to a image blurred by the salt &amp; pepper noise.
+</p>
+
+
+
+<p class="Code">
+ <img src="HTMLFiles/CVHW6_16.gif" alt="CVHW6_16.gif" width="982" height="111" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/CVHW6_17.gif" alt="CVHW6_17.gif" width="289" height="289" style="vertical-align:middle" />
+</p>
+
+<p class="Subsection">
+ Adaptive Median Filter
+</p>
+
+
+
+<p class="Text">
+ Adaptive median filter performs better than the normal median filter. More details of the edge are preserved.
+</p>
+
+
+
+<p class="Code">
+ <img src="HTMLFiles/CVHW6_18.gif" alt="CVHW6_18.gif" width="1403" height="480" style="vertical-align:middle" />
+</p>
+
+<table class='Output'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>Raw</span></td>
+  <td style='text-align: center;'><span>Adaptive Median</span></td>
+  <td style='text-align: center;'><span>Median</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span><img src="HTMLFiles/CVHW6_19.gif" alt="CVHW6_19.gif" width="180" height="180" style="vertical-align:middle" /></span></td>
+  <td style='text-align: center;'><span><img src="HTMLFiles/CVHW6_20.gif" alt="CVHW6_20.gif" width="180" height="180" style="vertical-align:middle" /></span></td>
+  <td style='text-align: center;'><span><img src="HTMLFiles/CVHW6_21.gif" alt="CVHW6_21.gif" width="180" height="180" style="vertical-align:middle" /></span></td>
+ </tr>
+</table>
+
+<table class='Output'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span></span></td>
+  <td style='text-align: center;'><span>In Detail</span></td>
+  <td style='text-align: center;'><span></span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>Raw</span></td>
+  <td style='text-align: center;'><span>Adaptive Median</span></td>
+  <td style='text-align: center;'><span>Median</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span><img src="HTMLFiles/CVHW6_22.gif" alt="CVHW6_22.gif" width="180" height="180" style="vertical-align:middle" /></span></td>
+  <td style='text-align: center;'><span><img src="HTMLFiles/CVHW6_23.gif" alt="CVHW6_23.gif" width="180" height="180" style="vertical-align:middle" /></span></td>
+  <td style='text-align: center;'><span><img src="HTMLFiles/CVHW6_24.gif" alt="CVHW6_24.gif" width="180" height="180" style="vertical-align:middle" /></span></td>
+ </tr>
+</table>
+
+<p class="Subsection">
+ Pad the Image for the Fourier Transformation
+</p>
+
+
+
+<p class="Code">
+ <img src="HTMLFiles/CVHW6_25.gif" alt="CVHW6_25.gif" width="564" height="85" style="vertical-align:middle" />
+</p>
+
+<p class="Subsection">
+ Motion Blur
+</p>
+
+
+
+<p class="Text">
+ Poor Lena.
+</p>
+
+
+
+<p class="Code">
+ <img src="HTMLFiles/CVHW6_26.gif" alt="CVHW6_26.gif" width="1354" height="178" style="vertical-align:middle" />
+</p>
+
+<table class='Output'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>Motion Blur</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span><img src="HTMLFiles/CVHW6_27.gif" alt="CVHW6_27.gif" width="180" height="180" style="vertical-align:middle" /></span></td>
+ </tr>
+</table>
+
+<p class="Subsection">
+ Motion + Gaussian Blur
+</p>
+
+
+
+<p class="Code">
+ <img src="HTMLFiles/CVHW6_28.gif" alt="CVHW6_28.gif" width="801" height="153" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/CVHW6_29.png" alt="CVHW6_29.png" width="95" height="17" style="vertical-align:middle" />
+</p>
+
+<table class='Output'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>Raw</span></td>
+  <td style='text-align: center;'><span>Motion Blur</span></td>
+  <td style='text-align: center;'><span>Motion+Gaussian Blur</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span><img src="HTMLFiles/CVHW6_30.gif" alt="CVHW6_30.gif" width="180" height="180" style="vertical-align:middle" /></span></td>
+  <td style='text-align: center;'><span><img src="HTMLFiles/CVHW6_31.gif" alt="CVHW6_31.gif" width="180" height="180" style="vertical-align:middle" /></span></td>
+  <td style='text-align: center;'><span><img src="HTMLFiles/CVHW6_32.gif" alt="CVHW6_32.gif" width="180" height="180" style="vertical-align:middle" /></span></td>
+ </tr>
+</table>
+
+<p class="Subsection">
+ Inverse Filter
+</p>
+
+
+
+<p class="Text">
+ The inverse filter is sensitive to the poor condition of the degradation transfer-function. The near-zero parameter result in the numerical instability when performing the division.<br />Here we add additional 0.2 to the degradation transfer-function to make it stable.<br />LPF is performed afterward.
+</p>
+
+
+
+<p class="Code">
+ <img src="HTMLFiles/CVHW6_33.gif" alt="CVHW6_33.gif" width="1170" height="156" style="vertical-align:middle" />
+</p>
+
+<table class='Output'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>Raw</span></td>
+  <td style='text-align: center;'><span>Inverse Filter</span></td>
+  <td style='text-align: center;'><span>Inverse Filter Cutoff:8</span></td>
+  <td style='text-align: center;'><span>Inverse Filter Cutoff:28</span></td>
+  <td style='text-align: center;'><span>Inverse Filter Cutoff:48</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span><img src="HTMLFiles/CVHW6_34.gif" alt="CVHW6_34.gif" width="180" height="180" style="vertical-align:middle" /></span></td>
+  <td style='text-align: center;'><span><img src="HTMLFiles/CVHW6_35.gif" alt="CVHW6_35.gif" width="180" height="180" style="vertical-align:middle" /></span></td>
+  <td style='text-align: center;'><span><img src="HTMLFiles/CVHW6_36.gif" alt="CVHW6_36.gif" width="180" height="180" style="vertical-align:middle" /></span></td>
+  <td style='text-align: center;'><span><img src="HTMLFiles/CVHW6_37.gif" alt="CVHW6_37.gif" width="180" height="180" style="vertical-align:middle" /></span></td>
+  <td style='text-align: center;'><span><img src="HTMLFiles/CVHW6_38.gif" alt="CVHW6_38.gif" width="180" height="180" style="vertical-align:middle" /></span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>MSE:</span></td>
+  <td style='text-align: center;'><span>0.0447714</span></td>
+  <td style='text-align: center;'><span>0.0148662</span></td>
+  <td style='text-align: center;'><span>0.0140874</span></td>
+  <td style='text-align: center;'><span>0.0147071</span></td>
+ </tr>
+</table>
+
+<p class="Subsection">
+ Wiener Filter
+</p>
+
+
+
+<p class="Subsubsection">
+ Derivation:
+</p>
+
+
+
+<p class="Text">
+ Variable and Functions: <br />&nbsp;&nbsp;&nbsp;&nbsp;<span><span>f(x,y)</span></span> - The raw image;<br />&nbsp;&nbsp;&nbsp;&nbsp;<span><span><img src="HTMLFiles/CVHW6_39.png" alt="CVHW6_39.png" width="45" height="24" style="vertical-align:middle" /></span></span> - Estimated image;<br />&nbsp;&nbsp;&nbsp;&nbsp;<span><span>g(x,y)</span></span> - The image with noise and degradation.<br />&nbsp;&nbsp;&nbsp;&nbsp;<span><span>n(x,y)</span></span> - The noise;<br />&nbsp;&nbsp;&nbsp;&nbsp;<span><span>F(u,v)</span></span> - Fourier transformation of the raw image;<br />&nbsp;&nbsp;&nbsp;&nbsp;<span><span><img src="HTMLFiles/CVHW6_40.png" alt="CVHW6_40.png" width="43" height="24" style="vertical-align:middle" /></span></span> - Fourier transformation of the estimated image;<br />&nbsp;&nbsp;&nbsp;&nbsp;<span><span>G(u,v)</span></span> - Fourier transformation of the blurred image;<br />&nbsp;&nbsp;&nbsp;&nbsp;<span><span>N(u,v)</span></span> - Fourier transformation of the noise;<br />&nbsp;&nbsp;&nbsp;&nbsp;<span><span>H(u,v)</span></span> - Degradation transfer-function;<br />&nbsp;&nbsp;&nbsp;&nbsp;<span><span>R(u,v)</span></span> - Restoration transfer-function.<br />Basic Relations:<br />&nbsp;&nbsp;&nbsp;&nbsp;<span><span>G(u,v)=F(u,v)H(u,v)+N(u,v)</span></span><br />&nbsp;&nbsp;&nbsp;&nbsp;<span><span><img src="HTMLFiles/CVHW6_41.png" alt="CVHW6_41.png" width="148" height="24" style="vertical-align:middle" /></span></span><br />Prerequisite:<br />&nbsp;&nbsp;&nbsp;&nbsp;Noise is independent with the image.<br />Optimization target:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><span><img src="HTMLFiles/CVHW6_42.png" alt="CVHW6_42.png" width="100" height="39" style="vertical-align:middle" /></span></span><br />Derivation:<br />&nbsp;&nbsp;&nbsp;&nbsp;<span><span><img src="HTMLFiles/CVHW6_43.png" alt="CVHW6_43.png" width="836" height="53" style="vertical-align:middle" /></span></span><br />&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;<span><span><img src="HTMLFiles/CVHW6_44.gif" alt="CVHW6_44.gif" width="446" height="75" style="vertical-align:middle" /></span></span><br />&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;Set <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P(u,v)=<span><span><img src="HTMLFiles/CVHW6_45.png" alt="CVHW6_45.png" width="341" height="22" style="vertical-align:middle" /></span></span>,<br />&nbsp;&nbsp;&nbsp;&nbsp;Thus <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><span><img src="HTMLFiles/CVHW6_46.png" alt="CVHW6_46.png" width="349" height="53" style="vertical-align:middle" /></span></span><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><span><img src="HTMLFiles/CVHW6_47.png" alt="CVHW6_47.png" width="522" height="60" style="vertical-align:middle" /></span></span><br />&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;From the prerequisite, we have:<br />&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><span><img src="HTMLFiles/CVHW6_48.png" alt="CVHW6_48.png" width="299" height="53" style="vertical-align:middle" /></span></span><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;Then, <br />&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><span><img src="HTMLFiles/CVHW6_49.png" alt="CVHW6_49.png" width="766" height="60" style="vertical-align:middle" /></span></span><br /><br />&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+
+
+
+<p class="Code">
+ <img src="HTMLFiles/CVHW6_50.gif" alt="CVHW6_50.gif" width="754" height="177" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/CVHW6_51.png" alt="CVHW6_51.png" width="109" height="17" style="vertical-align:middle" />
+</p>
+
+<table class='Output'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>Raw</span></td>
+  <td style='text-align: center;'><span>Motion+Gaussian Blur</span></td>
+  <td style='text-align: center;'><span>Filt</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span><img src="HTMLFiles/CVHW6_52.gif" alt="CVHW6_52.gif" width="180" height="180" style="vertical-align:middle" /></span></td>
+  <td style='text-align: center;'><span><img src="HTMLFiles/CVHW6_53.gif" alt="CVHW6_53.gif" width="180" height="180" style="vertical-align:middle" /></span></td>
+  <td style='text-align: center;'><span><img src="HTMLFiles/CVHW6_54.gif" alt="CVHW6_54.gif" width="180" height="180" style="vertical-align:middle" /></span></td>
+ </tr>
+</table>
+
+<p class="Subsection">
+ Constrained MSE Filter
+</p>
+
+
+
+<p class="Code">
+ <img src="HTMLFiles/CVHW6_55.gif" alt="CVHW6_55.gif" width="909" height="200" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/CVHW6_56.png" alt="CVHW6_56.png" width="109" height="17" style="vertical-align:middle" />
+</p>
+
+<table class='Output'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>Raw</span></td>
+  <td style='text-align: center;'><span>Motion+Gaussian Blur</span></td>
+  <td style='text-align: center;'><span>Filt</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span><img src="HTMLFiles/CVHW6_57.gif" alt="CVHW6_57.gif" width="180" height="180" style="vertical-align:middle" /></span></td>
+  <td style='text-align: center;'><span><img src="HTMLFiles/CVHW6_58.gif" alt="CVHW6_58.gif" width="180" height="180" style="vertical-align:middle" /></span></td>
+  <td style='text-align: center;'><span><img src="HTMLFiles/CVHW6_59.gif" alt="CVHW6_59.gif" width="180" height="180" style="vertical-align:middle" /></span></td>
+ </tr>
+</table>
+
+<p class="Input">
+ <img src="HTMLFiles/CVHW6_60.png" alt="CVHW6_60.png" width="4" height="18" style="vertical-align:middle" />
+</p>
+
+
+
+
+<div style="font-family:Helvetica; font-size:11px; width:100%; border:1px none #999999; border-top-style:solid; padding-top:2px; margin-top:20px;">
+ <a href="http://www.wolfram.com/language/" style="color:#000; text-decoration:none;">
+  <span style="color:#555555">Created with the Wolfram Language</span> 
+ </a>
+</div>
+</body>
+
+</html>
