@@ -6,6 +6,6 @@
 
 代码是用Mathematica写的，笔记本文件下载下来可以直接在MMA 11.3 上运行。
 
-实验报告传送门：[实验报告](https://albertyoung0112.github.io/hw6/index.htm)
+实验报告传送门：[实验报告](https://albertyoung0112.github.io/hw6/)
 
 老师(学姐)辛苦。
